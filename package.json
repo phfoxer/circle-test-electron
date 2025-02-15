@@ -5,7 +5,7 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "build": "electron-forge make /dist"
+    "make": "electron-forge make"
   },
   "author": "",
   "license": "ISC",
@@ -23,5 +23,22 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
+  },
+  "config": {
+  "forge": {
+    "packagerConfig": {},
+    "makers": [
+      {
+        "name": "@electron-forge/maker-zip",
+        "platforms": [
+          "linux"
+        ]
+      },
+      {
+        "name": "@electron-forge/maker-deb",
+        "config": {}
+      }
+    ]
   }
+}
 }
