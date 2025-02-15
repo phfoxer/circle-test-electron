@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# MacOS
+.DS_Store
+
+# Electron
+/dist/
+out/
